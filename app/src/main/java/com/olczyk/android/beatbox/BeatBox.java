@@ -34,6 +34,10 @@ public class BeatBox {
         soundPool.play(soundId,1.0f,1.0f,1,0,1.0f);
     }
 
+    public void release(){
+        soundPool.release();
+    }
+
     private void loadSounds() {
         String[] soundNames;
         try {
